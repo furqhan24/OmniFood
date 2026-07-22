@@ -25,12 +25,16 @@
     }
 
     .main-nav {
-        left: 42%;
-        max-width: 56%;
+        max-width: calc(100% - 150px);
     }
 
     .main-nav li {
-        margin-left: 25px;
+        margin-left: 20px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 85%;
     }
 
     .meal-photo img {
@@ -45,7 +49,7 @@
     }
 
     section {
-        padding: 60px 0;
+        padding: 55px 0;
     }
 
     header {
@@ -71,21 +75,20 @@
     }
 
     .main-nav {
-        left: 36%;
-        max-width: 62%;
+        max-width: calc(100% - 130px);
     }
 
     .main-nav li {
-        margin-left: 18px;
+        margin-left: 12px;
     }
 
     .main-nav li a:link,
     .main-nav li a:visited {
-        font-size: 85%;
+        font-size: 78%;
     }
 
     .section-meals {
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     .meals-showcase li {
@@ -144,7 +147,7 @@
 
     .section-plans .col {
         width: 100%;
-        margin: 0 0 25px 0;
+        margin: 0 0 22px 0;
     }
 
     .plan-box {
@@ -153,7 +156,7 @@
     }
 
     .plan-price {
-        font-size: 250%;
+        font-size: 240%;
     }
 
     blockquote {
@@ -177,7 +180,7 @@
     }
 
     section {
-        padding: 45px 0;
+        padding: 42px 0;
     }
 
     .row {
@@ -196,10 +199,12 @@
     }
 
     .main-nav {
+        float: none;
         position: static;
         max-width: 100%;
         margin-top: 18px;
         text-align: center;
+        white-space: normal;
     }
 
     .main-nav li {
@@ -266,7 +271,7 @@
     }
 
     .section-meals {
-        margin-top: 20px;
+        margin-top: 0;
         padding: 0;
     }
 
@@ -341,6 +346,11 @@
 
     .plan-box {
         width: 100%;
+    }
+
+    .plan-price {
+        font-size: 230%;
+        text-align: center;
     }
 
     .contact-form {

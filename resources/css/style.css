@@ -13,6 +13,7 @@ body {
 html {
     background-color: #ffffff;
     font-family: sans-serif;
+    scroll-behavior: smooth;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -120,10 +121,12 @@ input[type=submit]:hover {
 
 .main-nav {
     position: relative;
-    left: 50%;
+    float: right;
+    left: auto;
     top: 55px;
     list-style: none;
-    max-width: 50%;
+    max-width: none;
+    white-space: nowrap;
 }
 
 .main-nav li{
@@ -148,7 +151,7 @@ input[type=submit]:hover {
 }
 
 section {
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 h2 {
@@ -201,7 +204,8 @@ h3 {
 }
 
 .section-meals {
-    margin-top: 150px;
+    margin-top: 0;
+    padding: 0;
 }
 
 .meals-showcase {
@@ -288,7 +292,7 @@ h3 {
 
 .section-steps {
     background-color: #f4f4f4;
-    min-height: 135vh;
+    min-height: 0;
 }
 
 .steps {
@@ -341,7 +345,7 @@ a:active {
 }
 
 .section-cities {
-    min-height: 85vh;
+    min-height: 0;
 }
 
 .section-testimonials {
@@ -349,7 +353,7 @@ a:active {
     background-size: cover;
     background-attachment: fixed;
     color: #f4f4f4;
-    min-height: 80vh;
+    min-height: 0;
 }
 
 blockquote {
@@ -385,7 +389,7 @@ blockquote::before {
 
 .section-plans {
     background-color: #f4f4f4;
-    min-height: 100vh;
+    min-height: 0;
 }
 
 .plan-box {
@@ -405,6 +409,7 @@ blockquote::before {
     margin-bottom: 10px;
     font-weight: 100;
     color: #e67e22;
+    white-space: nowrap;
 }
 
 .plan-price span {
@@ -436,11 +441,12 @@ blockquote::before {
 }
 
 .section-form {
-    min-height: 100vh;
+    min-height: 0;
 }
 
 .contact-form {
     width: 60%;
+    max-width: 760px;
     margin: 0 auto;
 }
 
@@ -527,6 +533,7 @@ footer p {
     display: inline-block;
     padding-top: 10px;
     font-weight: 500;
+    color: #555;
 }
 
 .contact-form input[type=text],
@@ -539,6 +546,16 @@ footer p {
     border-radius: 4px;
     font-size: 100%;
     box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.15);
 }
 
 .contact-form textarea {
@@ -548,4 +565,9 @@ footer p {
 
 .contact-form .row {
     margin-bottom: 18px;
+}
+
+.contact-form input[type=submit] {
+    cursor: pointer;
+    margin-right: 0;
 }
