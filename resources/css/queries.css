@@ -1,0 +1,463 @@
+/* Large tablets and small desktops: fit the desktop layout inside narrower screens. */
+@media only screen and (max-width: 1200px) {
+    .row {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .hero-text-box {
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    header h1 {
+        font-size: 220%;
+        overflow-wrap: break-word;
+    }
+
+    h2 {
+        font-size: 170%;
+    }
+
+    .logo {
+        height: 90px;
+        left: 4%;
+    }
+
+    .main-nav {
+        left: 42%;
+        max-width: 56%;
+    }
+
+    .main-nav li {
+        margin-left: 25px;
+    }
+
+    .meal-photo img {
+        height: 32vh;
+    }
+}
+
+/* Tablets: reduce type, stack pricing cards, and keep fixed-height sections flexible. */
+@media only screen and (max-width: 1023px) {
+    html {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    header {
+        background-attachment: scroll;
+    }
+
+    header h1 {
+        font-size: 190%;
+    }
+
+    h2 {
+        font-size: 150%;
+        letter-spacing: 3px;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .main-nav {
+        left: 36%;
+        max-width: 62%;
+    }
+
+    .main-nav li {
+        margin-left: 18px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 85%;
+    }
+
+    .section-meals {
+        margin-top: 80px;
+    }
+
+    .meals-showcase li {
+        width: 50%;
+    }
+
+    .meal-photo img {
+        height: 280px;
+    }
+
+    .section-steps,
+    .section-cities,
+    .section-testimonials,
+    .section-plans,
+    .section-form {
+        min-height: 0;
+    }
+
+    .steps {
+        padding-top: 60px;
+    }
+
+    .steps-box:first-child {
+        padding-right: 2%;
+        margin-top: 20px;
+    }
+
+    .steps-box:last-child {
+        padding-left: 2%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .app-screen {
+        width: 65%;
+    }
+
+    .works-step {
+        margin-bottom: 35px;
+        margin-right: 0;
+    }
+
+    .works-step p {
+        font-size: 95%;
+        line-height: 145%;
+    }
+
+    .icon-small {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .city-feature {
+        font-size: 90%;
+    }
+
+    .section-plans .col {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+
+    .plan-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .plan-price {
+        font-size: 250%;
+    }
+
+    blockquote {
+        font-size: 95%;
+        overflow-wrap: break-word;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
+
+/* Small tablets and large phones: stack content, replace offset nav with clean stacked navigation. */
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .row {
+        padding: 0 4%;
+    }
+
+    nav .row {
+        text-align: center;
+    }
+
+    .logo {
+        position: static;
+        display: block;
+        height: 70px;
+        margin: 16px auto 0 auto;
+    }
+
+    .main-nav {
+        position: static;
+        max-width: 100%;
+        margin-top: 18px;
+        text-align: center;
+    }
+
+    .main-nav li {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: inline-block;
+        font-size: 85%;
+    }
+
+    .hero-text-box {
+        top: 64%;
+        text-align: center;
+        padding: 0 6%;
+    }
+
+    header h1 {
+        font-size: 170%;
+        line-height: 130%;
+        margin-bottom: 18px;
+    }
+
+    h2 {
+        font-size: 135%;
+        letter-spacing: 2px;
+        line-height: 135%;
+    }
+
+    .btn:link,
+    .btn:visited,
+    input[type=submit] {
+        padding: 9px 22px;
+    }
+
+    .btn-full:link,
+    .btn-full:visited,
+    input[type=submit] {
+        margin-right: 10px;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-features .col,
+    .section-cities .col,
+    .section-testimonials .col,
+    .section-form .col {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+
+    .section-features .box {
+        text-align: center;
+    }
+
+    .icon-big {
+        text-align: center;
+        margin:0 auto 20px auto;
+    }
+
+    .section-meals {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .meals-showcase li {
+        width: 100%;
+    }
+
+    .meal-photo img {
+        height: 260px;
+        min-height: 0;
+    }
+
+    .steps-box:first-child,
+    .steps-box:last-child {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .steps {
+        padding-top: 25px;
+    }
+
+    .app-screen {
+        width: 40%;
+        max-width: 220px;
+        margin-bottom: 25px;
+    }
+
+    .works-step {
+        max-width: 460px;
+        margin: 0 auto 28px auto;
+        text-align: left;
+    }
+
+    .works-step div {
+        height: 46px;
+        width: 46px;
+        padding: 5px 13px;
+        font-size: 135%;
+    }
+
+    .works-step p {
+        padding: 8px 0 0 60px;
+    }
+
+    .btn-app img {
+        height: 42px;
+        margin-top: 20px;
+    }
+
+    .box img {
+        height: auto;
+        margin-bottom: 8%;
+    }
+
+    .section-cities .box,
+    .section-testimonials .col {
+        text-align: center;
+    }
+
+    blockquote {
+        margin-top: 25px;
+        text-align: left;
+    }
+
+    cite img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .plan-box {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-form label {
+        padding-top: 0;
+    }
+
+    .contact-form .row {
+        margin-bottom: 14px;
+        padding: 0;
+    }
+
+    footer {
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+    footer .col {
+        width: 100%;
+        margin: 0 0 18px 0;
+    }
+
+    .footer-nav,
+    .social-links {
+        float: none;
+        text-align: center;
+    }
+
+    .footer-nav li,
+    .social-links li {
+        margin: 0 10px 10px 10px;
+    }
+}
+
+/* Small phones: tighten spacing and keep buttons, headings, form controls, and footer links within the viewport. */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        min-height: 600px;
+    }
+
+    header h1 {
+        font-size: 145%;
+    }
+
+    h2 {
+        font-size: 120%;
+        letter-spacing: 1px;
+    }
+
+    h2::after {
+        margin-top: 20px;
+    }
+
+    .hero-text-box {
+        top: 66%;
+    }
+
+    .btn:link,
+    .btn:visited,
+    input[type=submit] {
+        display: block;
+        width: 100%;
+        max-width: 230px;
+        margin: 0 auto 12px auto;
+        text-align: center;
+    }
+
+    .btn-full:link,
+    .btn-full:visited,
+    input[type=submit] {
+        margin-right: auto;
+    }
+
+    .meal-photo img {
+        height: 220px;
+    }
+
+    .app-screen {
+        width: 55%;
+    }
+
+    .works-step {
+        text-align: center;
+    }
+
+    .works-step div {
+        float: none;
+        margin: 0 auto 12px auto;
+    }
+
+    .works-step p {
+        padding: 0;
+    }
+
+    .btn-app img {
+        height: 38px;
+        margin-right: 0;
+    }
+
+    .plan-price {
+        font-size: 220%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .footer-nav li,
+    .social-links li {
+        display: block;
+        margin: 0 0 12px 0;
+    }
+}
