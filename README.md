@@ -1,6 +1,8 @@
-# 🍽️ Foodly - Responsive Food Delivery Landing Page
+# 🍽️ OmniFood - Responsive Food Delivery Landing Page
 
 A modern, responsive landing page for a fictional food delivery service. This project was built to practice semantic HTML, modern CSS, responsive web design, and clean UI development.
+
+### 🚀 [Live Demo](https://furqhan24.github.io/OmniFood/) | 📂 [Source Code](https://github.com/furqhan24/OmniFood)
 
 ## 🚀 Features
 
